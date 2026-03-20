@@ -33,8 +33,8 @@ int main(){
 // S Move Down 
 // W Move Up
     while(1){
-        printf("****Pointer Escape Room****\n");
-        printf("\033[H\033[J");
+        system("cls"); // Use "cls" for Windows
+        printf("**** POINTER ESCAPE ROOM ****\n");
         for(i=0;i<3;i++){
             for(j=0;j<3;j++){
                 if(row==i && col==j) printf("[%c]\t",dmat[i][j]);  
